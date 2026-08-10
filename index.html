@@ -1,15 +1,99 @@
 <!DOCTYPE html>
 <html lang="am">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Laaliccho FC</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laaliccho FC | Official Website</title>
 <style>
-body{font-family:Arial;margin:0;background:#f4f4f4}
-header{background:#0b6bd3;color:white;text-align:center;padding:30px}
-nav{background:#d71920;color:white;padding:10px;text-align:center}
-section{padding:20px}.card{background:white;padding:20px;border-radius:10px}
-</style></head>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f3f4f6;color:#111}
+header{background:linear-gradient(135deg,#0876d1,#0757a6);color:#fff;text-align:center;padding:45px 18px}
+header h1{margin:0;font-size:42px;line-height:1.1}
+header p{font-size:20px;margin:15px 0 0}
+nav{background:#d71920;color:#fff;display:flex;justify-content:center;flex-wrap:wrap}
+nav a{color:#fff;text-decoration:none;padding:16px 12px;font-weight:bold}
+nav a:hover{background:#b51218}
+.container{max-width:1100px;margin:auto;padding:22px}
+.hero,.card{background:#fff;border-radius:18px;padding:28px;margin:18px 0;box-shadow:0 4px 16px rgba(0,0,0,.08)}
+.hero{text-align:center}
+.hero h2{font-size:30px;margin:0 0 10px}
+.btn{display:inline-block;background:#0876d1;color:#fff;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:bold;margin-top:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card h3{margin-top:0;color:#0757a6}
+.stat{font-size:30px;font-weight:bold;color:#d71920}
+table{width:100%;border-collapse:collapse;background:#fff}
+th,td{padding:12px;border-bottom:1px solid #ddd;text-align:left}
+th{background:#0757a6;color:#fff}
+footer{background:#111827;color:#fff;text-align:center;padding:28px;margin-top:30px}
+@media(max-width:600px){header h1{font-size:32px}nav a{padding:13px 8px;font-size:14px}.container{padding:14px}}
+</style>
+</head>
 <body>
-<header><h1>LAALICCHO FOOTBALL CLUB</h1><p>Official Website</p></header>
-<nav>Home | About | Players | Fixtures | Gallery | Contact</nav>
-<section><div class="card"><h2>Welcome</h2><p>Laaliccho FC website template.</p></div></section>
-</body></html>
+
+<header id="home">
+  <h1>LAALICCHO FOOTBALL CLUB</h1>
+  <p>Official Website ⚽</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#players">Players</a>
+  <a href="#fixtures">Fixtures</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main class="container">
+  <section class="hero">
+    <h2>እንኳን ወደ ላልቾ FC በደህና መጡ!</h2>
+    <p>ይህ የላልቾ እግር ኳስ ክለብ ይፋዊ ድህረ ገጽ ነው።</p>
+    <a class="btn" href="#fixtures">የጨዋታ መርሃ ግብር</a>
+  </section>
+
+  <section id="about" class="card">
+    <h2>ስለ ላልቾ FC</h2>
+    <p>ላልቾ FC በእግር ኳስ ችሎታ፣ ቡድንነት እና ድል ላይ የሚያተኩር ክለብ ነው። ይህን ክፍል በክለቡ ትክክለኛ ታሪክ እና መረጃ በኋላ እናሻሽለዋለን።</p>
+  </section>
+
+  <section class="grid">
+    <div class="card"><h3>⚽ ጨዋታዎች</h3><div class="stat">--</div><p>የጨዋታ ብዛት</p></div>
+    <div class="card"><h3>🏆 ድሎች</h3><div class="stat">--</div><p>የክለቡ ድሎች</p></div>
+    <div class="card"><h3>👥 ተጫዋቾች</h3><div class="stat">--</div><p>የቡድኑ አባላት</p></div>
+  </section>
+
+  <section id="players" class="card">
+    <h2>👥 ተጫዋቾች</h2>
+    <div class="grid">
+      <div class="card"><h3>ተጫዋች 1</h3><p>ቦታ: ይጨመራል</p></div>
+      <div class="card"><h3>ተጫዋች 2</h3><p>ቦታ: ይጨመራል</p></div>
+      <div class="card"><h3>ተጫዋች 3</h3><p>ቦታ: ይጨመራል</p></div>
+    </div>
+  </section>
+
+  <section id="fixtures" class="card">
+    <h2>📅 የጨዋታ መርሃ ግብር</h2>
+    <table>
+      <tr><th>ቀን</th><th>ተጋጣሚ</th><th>ቦታ</th></tr>
+      <tr><td>ይጨመራል</td><td>ይጨመራል</td><td>ይጨመራል</td></tr>
+      <tr><td>ይጨመራል</td><td>ይጨመራል</td><td>ይጨመራል</td></tr>
+    </table>
+  </section>
+
+  <section id="gallery" class="card">
+    <h2>📸 Gallery</h2>
+    <p>የክለቡን ፎቶዎች እዚህ እንጨምራለን።</p>
+  </section>
+
+  <section id="contact" class="card">
+    <h2>📞 Contact</h2>
+    <p>Facebook: የላልቾ FC ይፋዊ ገጽ</p>
+    <p>ስልክ / ኢሜይል: በኋላ ይጨመራል</p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Laaliccho Football Club. All rights reserved.</p>
+</footer>
+</body>
+</html>
