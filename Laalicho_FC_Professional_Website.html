@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Laalicho Football Club</title>
+<style>
+:root{--navy:#061a38;--blue:#0878c9;--red:#df1824;--bg:#f4f6fa}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:#172033}
+.container{width:min(1180px,92%);margin:auto}
+header{background:#fff;position:sticky;top:0;z-index:10;border-bottom:1px solid #ddd}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between}.brand img{width:240px;max-width:55vw}
+nav{display:flex}nav a{padding:30px 14px;font-weight:bold;font-size:14px}nav a:hover{background:var(--red);color:#fff}
+.hero{min-height:560px;color:#fff;background:linear-gradient(90deg,#03132eeF,#092b55dd,#061a3888),radial-gradient(circle at 80% 35%,#4c78a5,#071b3a 60%);display:flex;align-items:center}
+.hero-inner{padding:80px 0}.tag{color:#62b6ed;font-weight:bold;letter-spacing:2px}.hero h1{font-size:clamp(44px,7vw,78px);line-height:1;margin:14px 0}.hero p{max-width:600px;font-size:20px;line-height:1.6;color:#dce8f7}
+.btn{display:inline-block;padding:15px 24px;margin:8px 6px 0 0;font-weight:bold;border-radius:4px}.red{background:var(--red);color:#fff}.outline{border:1px solid #fff;color:#fff}
+.logo-hero{position:absolute;right:7%;width:min(340px,30vw);filter:drop-shadow(0 15px 25px #0007)}
+.stats{background:#fff;display:grid;grid-template-columns:repeat(4,1fr);padding:25px 0;box-shadow:0 8px 25px #061a3815}.stat{padding:10px 25px;border-right:1px solid #ddd}.stat:last-child{border:0}.stat strong{color:var(--red);display:block}.stat b{font-size:19px}
+section{padding:70px 0}.heading{text-align:center;margin-bottom:38px}.heading h2{font-size:38px;margin:8px 0}.heading p{color:#667085}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:25px}.card{background:#fff;border-radius:14px;padding:30px;box-shadow:0 8px 25px #061a3812}.card p{line-height:1.8;color:#536174}
+.players{background:#edf1f6}.players-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.player{background:#fff;padding:18px;border-radius:10px;border-top:4px solid var(--blue)}.player small{color:var(--red);font-weight:bold}.player h3{font-size:16px}
+.management{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.manager{text-align:center;background:#fff;padding:28px;border-radius:14px;box-shadow:0 8px 25px #061a3812}.manager .icon{font-size:35px}.manager p{color:var(--red);font-weight:bold}
+.contact{background:var(--navy);color:#fff}.contact .card{background:#102e56;color:#fff}.contact .card p{color:#dbe7f5}.contact strong{color:#64b8ef}
+footer{background:#03132a;color:#cbd5e1;padding:40px 0;text-align:center}
+.menu{display:none;border:0;background:none;font-size:28px}
+@media(max-width:800px){nav{display:none}.menu{display:block}.logo-hero{opacity:.2;width:55vw;right:-10%}.stats{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}.players-grid{grid-template-columns:1fr 1fr}.management{grid-template-columns:1fr}}
+@media(max-width:500px){.stats{grid-template-columns:1fr}.players-grid{grid-template-columns:1fr}.hero h1{font-size:44px}}
+</style>
+</head>
+<body>
+<header><div class="container nav">
+<a class="brand" href="#home"><img src="assets/laalicho-logo.png" alt="Laalicho FC"></a>
+<button class="menu" onclick="document.querySelector('nav').style.display=document.querySelector('nav').style.display==='flex'?'none':'flex'">☰</button>
+<nav><a href="#home">HOME</a><a href="#about">ABOUT US</a><a href="#players">PLAYERS</a><a href="#management">MANAGEMENT</a><a href="#gallery">GALLERY</a><a href="#contact">CONTACT</a></nav>
+</div></header>
+
+<section id="home" class="hero"><div class="container hero-inner">
+<div class="tag">STRENGTH • UNITY • VICTORY</div>
+<h1>WELCOME TO<br>LAALICCHO FC</h1>
+<p>More than a team. We are a family. One club, one dream, united by football.</p>
+<a class="btn red" href="#about">ABOUT OUR CLUB →</a><a class="btn outline" href="#players">MEET THE TEAM</a>
+</div><img class="logo-hero" src="assets/laalicho-logo.png" alt=""></section>
+
+<div class="container stats">
+<div class="stat"><strong>FOUNDED</strong><b>2007 ዓ.ም</b><br>Established with passion.</div>
+<div class="stat"><strong>MISSION</strong><b>Develop Talent</b><br>Unity and excellence.</div>
+<div class="stat"><strong>VISION</strong><b>Build the Future</b><br>Success and community impact.</div>
+<div class="stat"><strong>VALUES</strong><b>Discipline & Teamwork</b><br>Respect, dedication and fair play.</div>
+</div>
+
+<section id="about"><div class="container"><div class="heading"><div class="tag">ABOUT THE CLUB</div><h2>Laalicho Football Club</h2><p>Our identity, ambition and commitment.</p></div>
+<div class="grid2"><div class="card"><h2>Welcome</h2><p>Laalicho Football Club is a football family built around unity, discipline and a shared dream. This official website brings together the club's players, management and contact information.</p></div>
+<div class="card"><h2>Club Identity</h2><p>Our official kit combines white, blue, red and black, while the club crest represents our pride and identity.</p></div></div></div></section>
+
+<section id="players" class="players"><div class="container"><div class="heading"><div class="tag">THE SQUAD</div><h2>Players</h2><p>25 players across four positions.</p></div><div class="players-grid" id="playerGrid"></div></div></section>
+
+<section id="management"><div class="container"><div class="heading"><div class="tag">LEADERSHIP</div><h2>Club Management</h2></div>
+<div class="management">
+<div class="manager"><div class="icon">⚽</div><h2>Korayo Echalo</h2><p>Head Coach</p></div>
+<div class="manager"><div class="icon">🏆</div><h2>Golla Maydhe</h2><p>President</p></div>
+<div class="manager"><div class="icon">📋</div><h2>Wado Tsige</h2><p>Manager</p></div>
+</div></div></section>
+
+<section id="gallery" class="players"><div class="container"><div class="heading"><div class="tag">CLUB MEDIA</div><h2>Gallery</h2><p>Official club photos can be added here.</p></div>
+<div class="card" style="text-align:center"><img src="assets/laalicho-logo.png" style="max-width:300px;width:70%" alt="Laalicho FC logo"></div></div></section>
+
+<section id="contact" class="contact"><div class="container"><div class="heading"><div class="tag">GET IN TOUCH</div><h2>Contact Us</h2></div>
+<div class="grid2"><div class="card"><h2>📍 Address</h2><p>በና ፀማይ ወረዳ፣ ሉቃ ቀበሌ</p></div><div class="card"><h2>📞 Phone</h2><p><a href="tel:0904415051">0904415051</a></p></div></div></div></section>
+
+<footer>© <span id="year"></span> Laalicho Football Club. All Rights Reserved.</footer>
+<script>
+const players=[
+["Goalkeeper","Tamirat Ayke"],["Goalkeeper","Zinabu Mamo"],["Goalkeeper","Eyob Echalo"],
+["Defender","Eliyas Dillo"],["Defender","Abnezer Awuno"],["Defender","Oyta Mamo"],["Defender","Tadese Woro"],["Defender","Dulo Laybo"],["Defender","Dongo Kena"],["Defender","Bala Wuka"],["Defender","Eyob Doge"],
+["Midfielder","Aricho Damo"],["Midfielder","Sitota Awuno"],["Midfielder","Natnael Belay"],["Midfielder","Mintesinot Belay"],["Midfielder","Worku Allo"],["Midfielder","Gujana Awuno"],
+["Forward","Aliyo Ganame"],["Forward","Eyob Aliyo"],["Forward","Mulatu Oyta"],["Forward","Petros Qorayo"],["Forward","Dagne Mengesha"],["Forward","Laybo Sharme"],["Forward","Tunko Ayke"],["Forward","Argo Kokke"]];
+document.getElementById("playerGrid").innerHTML=players.map((p,i)=>`<article class="player"><small>${p[0]}</small><h3>${i+1}. ${p[1]}</h3></article>`).join("");
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body></html>
